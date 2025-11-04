@@ -1,0 +1,13 @@
+print(" Planificateur de carburant ")
+distance_km_str = input("Distance totale (aller-retour en km) : ")
+distance_km = float(distance_km_str)
+efficiency_str = input("Consommation (L/100km) : ")
+efficiency = float(efficiency_str)
+price_per_liter_str = input("Prix du carburant par litre (€) : ")
+price_per_liter = float(price_per_liter_str)
+fuel_needed = (distance_km / 100) * efficiency
+total_cost = round(fuel_needed * price_per_liter, 2)
+print("\n Budget du carburant éstimer ")
+print(f"Distance totale : {distance_km} km")
+print(f"Carburant nécessaire : {fuel_needed:.2f} L")
+print(f"Coût total estimé : {total_cost:.2f} €")

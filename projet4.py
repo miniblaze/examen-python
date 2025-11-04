@@ -1,0 +1,12 @@
+print("Ajusteur d'ingrédients")
+original_amount_str = input("Quantité originale (ex: 250) : ")
+original_amount = float(original_amount_str)
+original_servings_str = input("Nombre de portions originales : ")
+original_servings = int(original_servings_str)
+desired_servings_str = input("Nombre de portions désirées : ")
+desired_servings = int(desired_servings_str)
+scaling_factor = desired_servings / original_servings
+new_amount = round(original_amount * scaling_factor, 1)
+print("\n Recette ajustée")
+print(f"La recette originale est pour {original_servings} personnes.")
+print(f"Pour {desired_servings} personnes, vous aurez besoin de {new_amount} unités de l'ingrédient.")
